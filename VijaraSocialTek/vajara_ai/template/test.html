@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </style>
+
+
+</head>
+<body>
+    <form action="post_create" method="POST"> 
+            <div class="form-group">                    
+            <label for="uploadfile" class='text-info' color="red">Upload File.csv</label>
+            <input type="file" class="form-control-file border" id="data_file" name="data_file">
+    </div>
+  </form>
+ <button type="button"  class="button button4" onclick="MyFunction(data_file)">Upload</button>
+</body>
+<script type="text/javascript">
+    function MyFunction(){
+        df=document.getElementById("data_file")
+        console.log(df)
+
+    }
+    
+
+</script>
+</html>
